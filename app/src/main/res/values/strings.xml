@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lidingram</string>
+    <string name="nameofuser">nameofuser</string>
+    <string name="add_button_text"> add </string>
+</resources>

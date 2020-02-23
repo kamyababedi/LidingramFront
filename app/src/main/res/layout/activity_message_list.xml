@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chatbackground"
+    tools:context=".MessageListActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reyclerview_message_list"
+        android:layout_width="422dp"
+        android:layout_height="327dp"
+        android:layout_marginBottom="292dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_chatbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ib_back" />
+
+    <LinearLayout
+        android:id="@+id/layout_chatbox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minHeight="48dp"
+        android:background="#242424"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">>
+
+        <EditText
+            android:id="@+id/edittext_chatbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="Enter Your Message"
+            android:maxLines="8"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button_chatbox_send"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="send_data"
+            android:text="SEND"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#dfdfdf"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_chatbox"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="332dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="2dp"
+        android:background="#242424"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ib_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="83dp"
+        android:layout_height="64dp"
+        android:layout_weight="1"
+        android:background="#242424"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reyclerview_message_list2"
+        android:layout_width="410dp"
+        android:layout_height="547dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_chatbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

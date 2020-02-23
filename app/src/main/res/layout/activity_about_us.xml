@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/e41f3b50ef57c386a621c864b9cdc3d"
+    tools:context=".AboutUsActivity">
+
+    <TextView
+        android:id="@+id/AboutUS_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="654dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="ABOUT US"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/AboutUs_Button"
+        android:layout_width="137dp"
+        android:layout_height="79dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="#000000"
+        android:padding="25dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/question" />
+
+    <ImageButton
+        android:id="@+id/Chat_Button"
+        android:layout_width="141dp"
+        android:layout_height="79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:background="#000000"
+        android:padding="25dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/speak" />
+
+    <ImageButton
+        android:id="@+id/Setting_Button"
+        android:layout_width="131dp"
+        android:layout_height="77dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:background="#000000"
+        android:padding="25dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/cog" />
+
+    <TextView
+        android:id="@+id/tv_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="187dp"
+        android:layout_marginTop="716dp"
+        android:layout_marginBottom="-9dp"
+        android:text="chats"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_aboutus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="719dp"
+        android:layout_marginEnd="305dp"
+        android:layout_marginBottom="-12dp"
+        android:text="about us"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        tools:text="about us" />
+
+    <TextView
+        android:id="@+id/tv_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="318dp"
+        android:layout_marginTop="716dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="-9dp"
+        android:text="setting"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+
+
+</RelativeLayout>

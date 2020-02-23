@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bc"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="463dp"
+        app:srcCompat="@drawable/student3" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="295dp"
+        android:backgroundTint="#FAFAFA"
+        android:drawableTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#F7F5F5"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="370dp"
+        android:layout_marginBottom="325dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="441dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="236dp"
+        android:textSize="18dp"
+        android:background="@drawable/btn_pink"
+        android:text="Login"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="515dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="197dp"
+        android:text="Register"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
